@@ -21,11 +21,11 @@ export default class extends Component {
     );
   };
   render() {
-    console.log(this.getExerciseByMuscles());
+    const exercises = this.getExerciseByMuscles();
     return (
       <Fragment>
         <Header />
-        <ExerciseMain />
+        <ExerciseMain  exercises = {exercises}/>
         <Footer muscles={muscles} />
       </Fragment>
     );
